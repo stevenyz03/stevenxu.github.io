@@ -81,20 +81,25 @@
 							<section id="two" class="spotlights">
 								<section>
 									<a class="image">
-										<img src="images/analysis1.png" alt="" data-position="center center" />
-										<figcaption>The 2023 plane in XFLR5(Analysis software)</figcaption>
+										<img src="images/poolbot1.png" alt="" data-position="center center" />
+										<figcaption>The first prototype design of the chassis</figcaption>
 										
 									</a>
 									<div class="content">
 										<div class="inner">
 											<header class="major">
-												<h3>Design</h3>
+												<h3>Design(updated as project goes)</h3>
 											</header>
 											<ul>
-												<li>The drive base uses 3 omni-wheels at 60 degree angles to achieve both rotational and translation freedom</li>
-												<li></li>
-												<li></li>
-												<li></li>
+												<li>The drive base uses 3 omni-wheels at 60 degree angles to achieve both rotational and translational freedom</li>
+												<li>Later prototype uses stepper motors instead of dc motors for positional accuracy as speed is not a concern</li>
+												<li>The robot uses a double acting pnematic acuator to hit the balls </li>
+												<li>A camera is setup on top of the pool table to gather real time data of the colors and positions of the balls and the robot</li>
+												<li>The camera data is transmitted to a laptop which uses YOLOv8(computer vision model) to both analyze the data and calculate
+													the path for the robot
+												</li>
+												<li>The instructions is sent from the laptop to the esp32 microcontroller on the robot via bluetooth</li>
+
 												
 											</ul>
 											
@@ -109,17 +114,20 @@
 								
 								<section>
 									<a class="image">
-										<img src="images/spirit1.jpg" alt="" data-position="center center" />
-										<figcaption>Spirit, 2023 Plane at Competition in Texas</figcaption>
+										<img src="images/poolbot2.jpg" alt="" data-position="center center" />
+										<figcaption>Prototype chassis with the motor electronics</figcaption>
 										
 									</a>
 									<div class="content">
 										<div class="inner">
 											<header class="major">
-												<h3>Results</h3>
+												<h3>Results(updated as project goes)</h3>
 											</header>
 											<ul>
-												
+												<li>Able to receive bluetooth signals from phone to execute translation and rotaion</li>
+												<li></li>
+												<li></li>
+												<li></li>
 												
 
 											</ul>
@@ -139,6 +147,7 @@
 									<header class="major">
 										<h2>Images & Videos</h2>
 									</header>
+									<!--
 									<a  class="image">
 										<img src="images/autocad1.png" alt=""  />
 										<figcaption>AutoCad file for lasercutting</figcaption>
@@ -147,19 +156,12 @@
 										<img src="images/spiritcad.png" alt=""  />
 										<figcaption>SolidWorks Assembly of the 2023 plane</figcaption>
 									</a>
+									-->
 									<video controls>
-										<source src="images/comp-flight-2023.mp4" type="video/mp4">
+										<source src="images/poolbot3.mp4" type="video/mp4">
 								
 									</video>
-									<figcaption> 2023 plane flight video</figcaption>
-									<video controls >
-										<source src="images/comp-flight-2022.mp4" type="video/mp4">
-									</video>
-									<figcaption> 2022 plane flight video</figcaption>
-									<video controls style="width:1200px; height:auto; display:block;" >
-										<source src="images/padaflight.mp4" type="video/mp4">
-									</video>
-									<figcaption> 2023 PADA flight video</figcaption>
+									<figcaption> Robot moving with command sent from phone via bluetooth</figcaption>
 									
 
 									
