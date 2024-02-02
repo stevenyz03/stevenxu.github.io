@@ -67,8 +67,7 @@
 									<p>As I greatly enjoyed robot summer, I wanted to do another similar project with a bit more autonomy. This project started with a group of friends
 										all wanting to do some extracurricular projects involving mechanical and circuit design, plus a hefty amount of computer vision and machine learning.
 										The goal of this project is to make an autonomous robot that takes processed camera data on a pool table with pool balls on it, and  automatically  
-										play pool by hitting the white ball to get the other balls in.
-
+										plays pool.
 									</p>
 									<p>
 
@@ -81,8 +80,8 @@
 							<section id="two" class="spotlights">
 								<section>
 									<a class="image">
-										<img src="images/poolbot1.png" alt="" data-position="center center" />
-										<figcaption>The first prototype design of the chassis</figcaption>
+										<img src="images/poolbot.png" alt="" data-position="center center" />
+										<figcaption>Chassis Cad</figcaption>
 										
 									</a>
 									<div class="content">
@@ -98,7 +97,7 @@
 												<li>The camera data is transmitted to a laptop which uses YOLOv8(computer vision model) to both analyze the data and calculate
 													the path for the robot
 												</li>
-												<li>The instructions is sent from the laptop to the esp32 microcontroller on the robot via bluetooth</li>
+												<li>The instructions is sent from the laptop to the esp32 microcontroller on the robot via Wifi</li>
 
 												
 											</ul>
@@ -114,8 +113,8 @@
 								
 								<section>
 									<a class="image">
-										<img src="images/poolbot2.jpg" alt="" data-position="center center" />
-										<figcaption>Prototype chassis with the motor electronics</figcaption>
+										<img src="images/poolbot_circuit1.jpg" alt="" data-position="center center" />
+										<figcaption>Robot electronics</figcaption>
 										
 									</a>
 									<div class="content">
@@ -124,9 +123,9 @@
 												<h3>Results(updated as project goes)</h3>
 											</header>
 											<ul>
-												<li>Able to receive bluetooth signals from phone to execute translation and rotaion</li>
-												<li></li>
-												<li></li>
+												<li>Able to precisely travel to any position and any rotation with either manual GUI commands or autonomous computer vision feedback </li>
+												<li>Able to calculate trajectory of the ball strike and the force of the strike </li>
+												<li>Accurately scores with complex ball movement(bouncing off edges)!</li>
 												<li></li>
 												
 
@@ -148,13 +147,30 @@
 										<h2>Images & Videos</h2>
 									</header>
 									
-									<a  class="image">
-										<img src="images/poolbot2.png" alt=""  />
-										<figcaption>Robot CAD</figcaption>
+									<a class="image">
+										<img src="images/poolbot_circuit.jpg" alt="" width="900" height="600" />
+										<figcaption>Robot from the back</figcaption>
 									</a>
 									
-									
+									<video controls>
+										<source src="images/poolrobot4.mp4" type="video/mp4">
 								
+									</video>
+									<figcaption> Pool table testing</figcaption>
+									<video controls>
+										<source src="images/poolrobot5.mp4" type="video/mp4">
+								
+									</video>
+									
+									<video controls>
+										<source src="images/poolrobot6.mp4" type="video/mp4">
+								
+									</video>
+									<video controls>
+										<source src="images/poolrobot7.mp4" type="video/mp4">
+								
+									</video>
+									<figcaption> Backview of robot running</figcaption>
 									<video controls>
 										<source src="images/solenoid.mp4" type="video/mp4">
 								
@@ -166,6 +182,9 @@
 								
 									</video>
 									<figcaption> Algorithm test on pool table without solenoid </figcaption>
+
+									
+									
 									
 
 									
